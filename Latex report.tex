@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\linespread{1.15}
+
+\title{Project Report: Personal Portfolio Website}
+\author{Ulas Unerli\\ Software Engineering, GISMA University of Applied Sciences}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction}
+This report documents the design, development, and content of my personal
+portfolio website. The portfolio is a single-page website built to present
+who I am, the skills I am developing as a software engineering student, and
+the ways I can be contacted. The sections below explain where the project can
+be found, how the website and its repository are organised, the reasoning
+behind the design choices, the tools used to build it, and an honest reflection
+on its strengths, weaknesses, and possible future improvements.
+
+\section{Project Links}
+The portfolio website and its source code are publicly available at the
+following links:
+
+\begin{itemize}
+  \item \textbf{Live website:}
+    \href{https://ulasunerli.github.io}{https://ulasunerli.github.io}
+  \item \textbf{GitHub repository:}
+    \href{https://github.com/UlasUnerli/UlasUnerli.github.io}{https://github.com/UlasUnerli/UlasUnerli.github.io}
+\end{itemize}
+
+The site is hosted for free using GitHub Pages, which serves the website
+directly from the repository, so the repository and the live site always
+stay in sync.
+
+\section{Structure of the Website and Repository}
+
+\subsection{Website Structure}
+The website is a single HTML page divided into clear sections, with a fixed
+navigation menu at the top that links to each one:
+
+\begin{itemize}
+  \item \textbf{Header:} displays my name and my role, ``Software Engineer''.
+  \item \textbf{Navigation menu:} quick links to About, Skills, Hobbies, and Contact.
+  \item \textbf{About:} a short introduction describing who I am and how I work.
+  \item \textbf{Skills:} a list of the technologies I use --- HTML, CSS, and Lua.
+  \item \textbf{Hobbies:} my interests outside of coding (video games, movies, comics).
+  \item \textbf{Contact:} buttons linking to my email, GitHub, and LinkedIn.
+  \item \textbf{Footer:} a closing line with my name and the year.
+\end{itemize}
+
+\subsection{Repository Structure}
+The GitHub repository is intentionally simple. Because the site is built only
+with HTML and CSS, the main file is \texttt{index.html}, which contains the page
+markup together with the CSS styling inside a \texttt{<style>} block in the
+document head. Keeping the styles in the same file keeps the project easy to
+manage at this small scale. The repository is named
+\texttt{UlasUnerli.github.io}, which is the naming convention GitHub Pages
+requires to publish a personal site automatically.
+
+\section{Design Decisions}
+The design was guided by one main idea: keep it simple and readable.
+
+\begin{itemize}
+  \item \textbf{Single-page layout:} all content fits on one scrollable page so
+    a visitor can see everything quickly without navigating between files.
+  \item \textbf{Clear navigation:} a sticky menu with anchor links lets the
+    reader jump straight to any section.
+  \item \textbf{Calm colour scheme:} a dark navy header against a light grey
+    background gives good contrast and an easy-to-read, professional look.
+  \item \textbf{Sectioned content in cards:} each topic sits in its own white
+    box with a border, which separates information clearly and makes the page
+    feel organised.
+  \item \textbf{Honest, plain content:} the copy reflects my real skill level
+    rather than overstating it, which I felt was more genuine and trustworthy.
+  \item \textbf{Responsiveness:} a viewport meta tag and a centred, max-width
+    layout help the page display reasonably on both desktop and mobile screens.
+\end{itemize}
+
+\section{Tools and Technologies}
+The portfolio was built using a small, focused set of tools:
+
+\begin{itemize}
+  \item \textbf{HTML} --- to structure the content of the page.
+  \item \textbf{CSS} --- to style the layout, colours, and spacing.
+  \item \textbf{Git \& GitHub} --- for version control and storing the code.
+  \item \textbf{GitHub Pages} --- to host the website for free directly from
+    the repository.
+  \item \textbf{A text/code editor} --- to write and edit the HTML and CSS.
+\end{itemize}
+
+I deliberately did not use any frameworks or libraries, since the project is
+small and writing plain HTML and CSS gave me a clearer understanding of how
+the page works.
+
+\section{Reflection: Strengths, Weaknesses, and Future Work}
+
+\subsection{Strengths}
+\begin{itemize}
+  \item The site is clean, lightweight, and loads quickly.
+  \item The structure is clear and easy to navigate.
+  \item The code is simple and readable, which makes it easy to maintain and
+    extend.
+  \item All contact links work and point to my real profiles.
+\end{itemize}
+
+\subsection{Weaknesses}
+\begin{itemize}
+  \item The skill set shown is currently small, reflecting that I am still
+    early in my learning.
+  \item There are no live project demonstrations yet, only descriptions.
+  \item The visual design is fairly basic and could feel plain to some visitors.
+  \item There is no interactivity, since the site uses only HTML and CSS.
+\end{itemize}
+
+\subsection{Future Improvements}
+\begin{itemize}
+  \item Add a dedicated projects section with screenshots and live links as I
+    build more.
+  \item Learn and introduce JavaScript to add interactive features.
+  \item Add a downloadable copy of my CV directly on the page.
+  \item Improve the visual design with custom fonts and small animations.
+  \item Expand the skills section as I learn new languages and tools.
+\end{itemize}
+
+\section{Conclusion}
+This portfolio is an honest, simple presentation of my current abilities as a
+software engineering student. Building it with plain HTML and CSS helped me
+understand the fundamentals of web development and version control, and it gives
+me a solid foundation to expand as my skills grow. The reflection above sets a
+clear direction for the features I plan to add next.
+
+\end{document}
